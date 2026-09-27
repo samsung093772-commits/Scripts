@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tạo Trang Profile Cá Nhân</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --subtext: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      width: 100%;
+      max-width: 480px;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--subtext);
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: #0f172a;
+      color: var(--text);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--accent);
+      color: #0f172a;
+      font-weight: bold;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-submit:hover {
+      background-color: #0284c7;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Điền Thông Tin Profile</h2>
+    
+    <form>
+      <div class="form-group">
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" id="fullname" placeholder="Nhập họ và tên...">
+      </div>
+
+      <div class="form-group">
+        <label for="nickname">Biệt danh / Nickname:</label>
+        <input type="text" id="nickname" placeholder="Nhập biệt danh...">
+      </div>
+
+      <div class="form-group">
+        <label for="bio">Tiểu sử ngắn (Bio):</label>
+        <textarea id="bio" rows="2" placeholder="Giới thiệu bản thân..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="interests">Sở thích / Game yêu thích:</label>
+        <input type="text" id="interests" placeholder="Ví dụ: Bóng đá, Free Fire, Roblox...">
+      </div>
+
+      <div class="form-group">
+        <label for="facebook">Link Facebook:</label>
+        <input type="url" id="facebook" placeholder="https://facebook.com/...">
+      </div>
+
+      <div class="form-group">
+        <label for="tiktok">Link TikTok:</label>
+        <input type="url" id="tiktok" placeholder="https://tiktok.com/@...">
+      </div>
+
+      <div class="form-group">
+        <label for="youtube">Link YouTube / Discord:</label>
+        <input type="text" id="youtube" placeholder="Link kênh hoặc Username...">
+      </div>
+
+      <button type="button" class="btn-submit">Lưu thông tin</button>
+    </form>
+  </div>
+
+</body>
+</html>
